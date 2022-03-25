@@ -1,0 +1,91 @@
+.citcle-lucky-wrapper
+    padding: 0
+    width: 100vw
+    height: 100vh
+    background-image: url('../images/bg-1.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    .wrapper-container
+        width: 100%
+        height: 100%
+        .wrap-login
+            max-width: 687px
+            width: 100%
+            padding: r(40px) r(135px) r(100px)
+            height: auto
+            background: rgba(0, 0, 0, 0.12)
+            backdrop-filter: blur(40px)
+            border-radius: r(42px)
+            a
+                .logo
+                    margin-bottom: r(40px)
+                    width: 190px
+            .login-title
+                margin-bottom: r(24px)
+                .small-txt
+                    font-weight: 700
+                    font-size: r(20px)
+                    color: $white
+                .big-txt
+                    font-weight: 700
+                    font-size: r(40px)
+                    color: $white
+            .wrap-form
+                .form-group
+                    position: relative
+                    width: 100%
+                    margin-bottom: 1rem
+                    .label
+                        font-weight: 700
+                        font-size: r(20px)
+                        color: $white
+                        margin-bottom: r(8px)
+                    .form-control
+                        width: 100%
+                        background: $white
+                        border: 1px solid #D3D8DE
+                        box-sizing: border-box
+                        border-radius: r(4px)
+                        padding: r(14px) r(16px)
+                        padding-right: r(40px)
+                        &:placeholder
+                            font-size: 1rem
+                            color: #B6BEC8
+                    .show-pass
+                        position: absolute
+                        bottom: 16px
+                        right: 16px
+                        cursor: pointer
+                .btn-submit
+                    width: 100%
+                    margin-top: 16px
+    @media screen and ( max-width: 600px )
+        background-image: url('../images/bg-1_mb.jpg')
+        .wrapper-container
+            align-items: flex-end
+            .wrap-login
+                max-width: 100%
+                padding: r(32px) r(32px) r(100px)
+                border-bottom-left-radius: 0
+                border-bottom-right-radius: 0
+                a
+                    display: block
+                    text-align: center
+                    .logo
+                        width: 150px
+                        margin-bottom: 16px
+                .login-title
+                    display: none
+                .wrap-form
+                    .form-group
+                        .label
+                            font-size: 1rem
+                        .form-control
+                            padding: r(8px) r(16px)
+                        .show-pass
+                            bottom: 10px
+                    .btn-submit
+                        margin-top: 8px
+                        span
+                            font-size: 1rem
