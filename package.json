@@ -41,6 +41,7 @@
 		"gulp-typescript": "^5.0.1",
 		"gulp-uglify": "3.0.2",
 		"lazysizes": "^5.3.2",
+		"micromodal": "^0.4.10",
 		"plyr": "^3.5.4",
 		"vendors": "^1.0.4"
 	},

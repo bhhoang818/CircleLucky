@@ -1,1 +1,47 @@
-
+.main-wrapper
+    .wrapper-container
+        width: 100%
+        height: 100%
+        .wrap-circle
+            .circle
+                position: relative
+                margin-bottom: 58px
+                .block-img
+                    width: 618px
+                    height: 100%
+                    +img-ratio(618/618)
+                .block-arrow
+                    position: absolute
+                    top: -22px
+                    left: 50%
+                    transform: translateX(-50%)
+                    width: 80px
+                    &::after
+            .button
+                text-align: center
+                .btn-submit
+                    span
+                        padding: 11px 122px
+        @media screen and ( max-width: 1280.98px )
+            .wrap-circle
+                .circle
+                    .block-img
+                        width: 518px
+#modal
+    position: absolute
+    max-width: 602px
+    top: 50%
+    left: 50%
+    z-index: 9999
+    padding: 104px 30px
+    background: rgba(255, 255, 255, 0.5)
+    backdrop-filter: blur(40px)
+    border-radius: 42px
+    transform: translate(-50%, -50%)
+    .modal-content
+        text-align: center
+        h1
+            font-weight: 700
+            font-size: 36px
+            color: #454F5B
+            text-transform: uppercase
